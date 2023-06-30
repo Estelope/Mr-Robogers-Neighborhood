@@ -26,7 +26,7 @@ created with TDD development
 * Navigate to top level of directory
 * open index.html in compatible web browser
 * below is the link for cloning the repo
-* repo:
+* repo: https://github.com/Estelope/Mr-Robogers-Neighborhood.git
 
 
 ## Known Bugs

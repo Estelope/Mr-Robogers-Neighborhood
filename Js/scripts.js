@@ -10,7 +10,7 @@ function bedazzleNumberInput(userNumber) {
     let numberCount = i.toString();
 
     if ((numberCount).includes(['3'])) {
-      numberArray.push("'Won't you be my neighbor?'"); //+= " "
+      numberArray.push("Won't you be my neighbor?"); //+= " "
     }
     else if ((numberCount).includes(['2'])) {
       numberArray.push("Boop!")
@@ -27,7 +27,7 @@ function bedazzleNumberInput(userNumber) {
 
 // ui logic 
 
-
+document.addEventListener("DOMContentLoaded", function () {
 document.getElementById('formOne').addEventListener('submit', function (event) {
   event.preventDefault();
   console.log("its submitting")
@@ -39,4 +39,4 @@ document.getElementById('formOne').addEventListener('submit', function (event) {
   p.innerText = result.join(", ");
   
 });
-
+});

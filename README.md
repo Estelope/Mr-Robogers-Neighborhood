@@ -15,7 +15,14 @@
 
 ## Description
 
-created with TDD development 
+This program was created with TDD development to display a modified count to the user that follows the rules below:
+
+For numbers that contain a 1, all digits are replaced with "Beep!"
+For example, all digits of the number 109, 11, or 1 would be replaced with "Beep!"
+For numbers that contain a 2, all digits are replaced with "Boop!"
+For example, all digits of the number 2, 24, or 2099 would be replaced with "Boop!"
+For numbers that contain a 3, all digits are replaced with "Won't you be my neighbor?"
+For example, all digits of the number 39, 3, or 8763 would be replaced with "Won't you be my neighbor?"
 
 
 ## Setup/Installation Requirements

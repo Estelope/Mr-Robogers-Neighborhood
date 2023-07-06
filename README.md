@@ -70,14 +70,28 @@ Test: "It should return an array of numbers from 0 to the user's inputted number
 Code: bedazzleNumberInput(0);
 Expected Output: [0]
 
+Test "It should only take a number as an input no other characters"
+code: bedazzleNumberInput(0);
+Expected Output: [ Please enter a number!]
+
 Test: "It should replace numbers that contain a "1" with "Beep" and display an array from 0 to that number
-Code: bedazzleNumberInput(1)
+Code: bedazzleNumberInput(1);
 Expected Output: [0,"Beep"]
 
 Test: "It should replace numbers that contain a "2" with "Boop" and display an array from 0 to that number
-Code: bedazzleNumberInput(2)
+Code: bedazzleNumberInput(2);
 Expected Output: [0, "Beep", "Boop"]
 
 Test "It should replace numbers that contain a "3" with "Won't you be my neighbor?" and display an array from 0 to that number
-Code: bedazzleNumberInput(3)
+Code: bedazzleNumberInput(3);
 Expected Output: [0, "Beep", "Boop", "Won't you be my neighbor?"]
+
+ Test: "If the input includes 1,2,3 it should return a hierarchy of substitutions following the rule 3>2>1. 
+Code: bedazzleNumberInput(13);
+Expected Output:[ 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, "Won't you be my neighbor?"]
+
+Test: "It should replace the result with a new result if the submit button is pressed multiple times."
+Code: bedazzleNumberInput(1);
+Code: bedazzleNumberInput(4);
+Expected Output:[ 0, Beep!, Boop!, Won't you be my neighbor?, 4,]
+
